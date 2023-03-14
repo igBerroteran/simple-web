@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HANNA Zapatería</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/w3.css" />
+    <!--You can load the CSS and font files locally rather than from the W3Schools and Google Fonts servers. This way, your website will load faster and reduce the number of external requests. You can download the files and host them on your server or use a CDN.
+You can move the inline styles for the menu modal and rules modal to the CSS file. This way, your HTML will be cleaner, and your CSS file will be more organized.
+You can use a smaller image for the background. The current image is 1.4 MB, which can increase the loading time of the page. You can use a compressed image or optimize it using an image editor.
+Other than that, your code looks good and clean.-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <style>
+      body,
+      h1,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      .bgimg {
+        background-image: url("/img.JPG");
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .middle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+   
+      <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-middle w3-jumbo">
+          <p>Zapatería Hanna</p>
+        </div>
+
+        <div class="w3-display-topleft w3-container w3-xlarge">
+          <p>
+            <button
+              onclick="document.getElementById('menu').style.display='block'"
+              class="w3-button w3-black"
+            >
+              Servicos
+            </button>
+          </p>
+          <p>
+            <button
+              onclick="document.getElementById('reglas').style.display='block'"
+              class="w3-button w3-black"
+            >
+              Reglas
+            </button>
+          </p>
+          <p>
+            <button
+              onclick="document.getElementById('contact').style.display='block'"
+              class="w3-button w3-black"
+            >
+              Contacto
+            </button>
+          </p>
+        </div>
+
+        <div class="w3-display-bottomleft w3-container">
+          <p class="w3-xlarge">J-00221085-0</p>
+          <p class="w3-large">N° 7, Calle Ribas, Los Teques</p>
+          <p>
+            powered by @IgBerroteran
+         
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Modal -->
+      <div id="menu" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black w3-display-container">
+            <span
+              onclick="document.getElementById('menu').style.display='none'"
+              class="w3-button w3-display-topright w3-large"
+              >x</span
+            >
+            <h1>Reparación de Calzados</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Cambio de suela</h5>
+            <h5>Costura de suela</h5>
+            <h5>Realización de suelas adaptada a cada calzado</h5>
+            <h5>Cambio de tacón</h5>
+            <!--<b>$1.00</b>-->
+          </div>
+          <div class="w3-container w3-black">
+            <h1>Venta de accesorios</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Trenzas</h5>
+            <h5>Pintura para zapatos</h5>
+            <h5>Cremas para zapatos</h5>
+            <h5>Pega de zapatero</h5>
+            <h5>Plantillas</h5>
+          </div>
+          <div class="w3-container w3-black">
+            <h1>Reparación de Carteras</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Curo, semi-Cuero</h5>
+            <h5>Instalación de cierres</h5>
+          </div>
+        </div>
+      </div>
+
+      <!--Reglas-->
+      <div id="reglas" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black w3-display-container">
+            <span
+              onclick="document.getElementById('reglas').style.display='none'"
+              class="w3-button w3-display-topright w3-large"
+              >x</span
+            >
+            
+            <h1>Diagnóstico</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Para poder decir, si hay reparación para su calzado </h5>
+            <h5> <b>Debe traerlo al taller</b></h5>
+
+            <!--<b>$1.00</b>-->
+          </div>
+          <div class="w3-container w3-black">
+            <h1>Pago</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Se aceptan calzados, únicamente contra:</h5>
+            <h5><b>50</b> % del pago</h5>
+          </div>
+          <div class="w3-container w3-black">
+            <h1>Métodos de pago</h1>
+          </div>
+          <div class="w3-container">
+            <h5>Divisas</h5>
+            <h5>Bolívares </h5>
+            <h5>Punto de pago </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Modal -->
+      <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black">
+            <span
+              onclick="document.getElementById('contact').style.display='none'"
+              class="w3-button w3-display-topright w3-large"
+              >x</span
+            >
+
+            <div class="middle"></div>
+                <h1>Contacto</h1>
+              </div>
+              <div class="w3-container">
+                <h1>Horarios</h1>
+              </div>
+              <div class="w3-container">
+                <h5>Lunes - Domingo <b>8:00 am - 2:00 pm</b></h5>
+                <h5>Sábados <b>8:00 am - 12:00 pm</b></h5>
+
+           
+              <div class="w3-container">
+                <h1>Dirección</h1>
+                <h5>Local N° 7, Sector El Pueblo, Calle Ribas, Los Teques, Edo. Miranda</b></h5>
+            </div>
+            <div class="w3-container flex">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d423.9494140304553!2d-67.04195832968288!3d10.349904555713126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1678759676599!5m2!1ses-419!2sve" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
